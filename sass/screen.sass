@@ -5,57 +5,79 @@
 
 @import "compass/reset"
 @import "compass/css3"
-@import url("https://fonts.googleapis.com/css?family=Quicksand")
 @import "compass/css3/box-shadow"
+@import url("https://fonts.googleapis.com/css?family=Quicksand")
 
-$image: ('https://laineantti.github.io/CompassWebsite/images/1.jpg')
+$image: ('../images/cover.png')
 
 html, body
-  background-color: #fcfcfc
   font-family: "Quicksand", sans-serif
-  font-size: 1.1em
   width: 100%
   height: 100%
   margin: 0
   padding: 0
   overflow-x: hidden
+  background-color: black
+  background: url('../images/bg.png') center no-repeat
+  background-size: 100% 100%
 
 #wrapper
-  padding: 10px
+  padding: 0px
   position: relative
+  margin: 0 auto
+  max-width: 1000px
+  background-color: white
+
   
 #logo
   width: 100px
   height: 100px
   float: left
-  -webkit-filter: drop-shadow(0 2px 3px rgba(0,0,0,.8))
-  -moz-filter: drop-shadow(0 2px 3px rgba(0,0,0,.8))
-  -ms-filter: drop-shadow(0 2px 3px rgba(0,0,0,.8))
-  -o-filter: drop-shadow(0 2px 3px rgba(0,0,0,.8))
-  filter: drop-shadow(0 2px 3px rgba(0,0,0,.8))
- 
   
 #top
-  margin: 11px
+  height: 105px
+  margin: 0px auto
+  max-width: 1000px
+  background-color: white
+  padding: 10px
 
 #bottom
   text-align: center
-  margin: 10px
+  margin: 0px auto
+  max-width: 1000px
+  background-color: white
+  padding: 20px
+
+.my-drop-shadow
+  -webkit-filter: drop-shadow(0 1px 2px rgba(0,0,0,.5))
+  -moz-filter: drop-shadow(0 1px 2px rgba(0,0,0,.5))
+  -ms-filter: drop-shadow(0 1px 2px rgba(0,0,0,.5))
+  -o-filter: drop-shadow(0 1px 2px rgba(0,0,0,.5))
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,.5))
   
 .post
   padding: 20px
   border-left: 1px solid #efefef
   border-bottom: 1px solid #efefef
   margin-top: 10px
-  max-width: 1000px
+  font-size: 1.1em
 
 .largeimage
   background: url($image) center no-repeat
   background-size: 100%
   height: 300px
   width: 100%
-  padding: 1em
-  margin: 0 auto
-  
-h1, h4
+
+h1, h2, h3, h4
+  font-weight: bold
   color: #332b2b
+
+h1
+  font-size: 48px
+
+h2
+  font-size: 36px
+
+h3
+  font-size: 24px
+  padding-bottom: 20px
