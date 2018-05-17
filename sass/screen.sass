@@ -1,0 +1,61 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset"
+@import "compass/css3"
+@import url("https://fonts.googleapis.com/css?family=Quicksand")
+@import "compass/css3/box-shadow"
+
+$image: ('https://laineantti.github.io/CompassWebsite/images/1.jpg')
+
+html, body
+  background-color: #fcfcfc
+  font-family: "Quicksand", sans-serif
+  font-size: 1.1em
+  width: 100%
+  height: 100%
+  margin: 0
+  padding: 0
+  overflow-x: hidden
+
+#wrapper
+  padding: 10px
+  position: relative
+  
+#logo
+  width: 100px
+  height: 100px
+  float: left
+  -webkit-filter: drop-shadow(0 2px 3px rgba(0,0,0,.8))
+  -moz-filter: drop-shadow(0 2px 3px rgba(0,0,0,.8))
+  -ms-filter: drop-shadow(0 2px 3px rgba(0,0,0,.8))
+  -o-filter: drop-shadow(0 2px 3px rgba(0,0,0,.8))
+  filter: drop-shadow(0 2px 3px rgba(0,0,0,.8))
+ 
+  
+#top
+  margin: 11px
+
+#bottom
+  text-align: center
+  margin: 10px
+  
+.post
+  padding: 20px
+  border-left: 1px solid #efefef
+  border-bottom: 1px solid #efefef
+  margin-top: 10px
+  max-width: 1000px
+
+.largeimage
+  background: url($image) center no-repeat
+  background-size: 100%
+  height: 300px
+  width: 100%
+  padding: 1em
+  margin: 0 auto
+  
+h1, h4
+  color: #332b2b
